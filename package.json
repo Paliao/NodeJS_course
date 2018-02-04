@@ -1,0 +1,23 @@
+{
+  "name": "NodeJs-course",
+  "version": "1.0.0",
+  "description": "",
+  "main": "news.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Paliao/NodeJS_course.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Paliao/NodeJS_course/issues"
+  },
+  "homepage": "https://github.com/Paliao/NodeJS_course#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
