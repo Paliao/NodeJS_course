@@ -1,20 +1,9 @@
-const express = require('express')
-const app = express()
+const app = require('./config/server.js')
 
-app.set('view engine', 'ejs')
-
-app.get('/', function (req, res) {
-  res.render('home/index')
-})
-
-app.get('/news_former', function (req, res) {
-  res.render('admin/form_add_news')
-})
-
-app.get('/news', function (req, res) {
-  res.render('news/news')
-})
+const homeRote = require('./app/routes/home')(app)
+const formRoute = require('./app/routes/form_add_news')(app)
+const newsRoute = require('./app/routes/news')(app)
 
 app.listen(3000, function() {
-  console.log('App running at 3000 with express')
+  console.log('Server running at port 3000')
 })
